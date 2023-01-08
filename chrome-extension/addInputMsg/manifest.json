@@ -3,12 +3,13 @@
   "description": "Build an Extension!",
   "version": "1.0",
   "manifest_version": 3,
-  "permissions": ["storage", "activeTab", "scripting"],
-  "action": {
-    "default_popup": "popup.html"
-  },
+  "permissions": ["background", "scripting", "storage", "activeTab", "tabs", "notifications", "declarativeContent", "webRequest"],
+  "content_scripts": [{
+      "matches": ["*://dashboard-01.moengage.com/*"],
+      "css": [],
+      "js": ["default.js"]
+  }],
   "host_permissions": [
-    "https://*moengage.com/*"
+    "https://*/*"
   ]
-  // "options_page": "options.html"
 }
