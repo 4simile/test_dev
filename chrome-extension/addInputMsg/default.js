@@ -20,4 +20,3 @@ window.onload = () => {
     cloneInputLms.querySelector("#gupshup-lms").value = " ";
     dom.before(cloneInputLms);
 }
-
